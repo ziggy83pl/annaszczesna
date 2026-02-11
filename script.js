@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 filename: 'CV_Anna_Szczesna.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { 
-                    scale: 2, 
+                    scale: 3, 
                     useCORS: true, 
                     scrollY: 0 
                 },
