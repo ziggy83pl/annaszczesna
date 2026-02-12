@@ -24,16 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const opt = {
                 margin: 0,
                 filename: 'CV_Anna_Szczesna.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
+                image: { type: 'jpeg', quality: 0.88 },
                 html2canvas: { 
                     scale: 3, 
                     useCORS: true, 
-                    scrollY: 0 
+                    scrollY: 0,
+                    logging: false,
+                    backgroundColor: '#ffffff',
+                    allowTaint: true,
+                    dpi: 300,
+                    letterRendering: true
                 },
                 jsPDF: { 
                     unit: 'px', 
                     format: [width, height], 
-                    orientation: 'portrait' 
+                    orientation: 'portrait',
+                    compress: true
                 }
             };
 
