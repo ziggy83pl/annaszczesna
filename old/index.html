@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Anna Szczęsna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --morski: #2b6d9d;
+            --tekst-ciemny: #333;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0; padding: 0;
+            display: flex; min-height: 100vh;
+        }
+        /* Lewa kolumna */
+        .sidebar {
+            width: 35%;
+            background-color: var(--morski);
+            color: white;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            border-top: 15px solid white;
+            border-bottom: 15px solid white;
+            border-left: 20px solid white;
+        }
+        .profile-pic {
+            width: 180px; height: 180px;
+            border-radius: 50%;
+            background: url('twoje-zdjecie.JPG') center/cover;
+            border: 5px solid rgba(255,255,255,0.2);
+            margin-bottom: 30px;
+        }
+        .section-title-side {
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        /* Prawa kolumna */
+        .main {
+            width: 65%;
+            padding: 40px 50px;
+            color: var(--tekst-ciemny);
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--morski);
+            font-size: 3em;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2 {
+            font-size: 2.2em;
+            margin: 0 0 20px 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .section-header {
+            color: var(--morski);
+            border-bottom: 2px solid var(--morski);
+            text-transform: uppercase;
+            margin-top: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .content-block { margin-bottom: 20px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .rodo {
+            margin-top: 50px;
+            font-size: 0.6em;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+            line-height: 1.4;
+        }
+        .company-name {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: var(--morski);
+            margin: 5px 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .main p {
+            font-weight: 500;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact-item i {
+            width: 25px;
+        }
+
+        .download-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--morski);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+            background-color: #1a4f5e;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                border-left: none;
+                text-align: center;
+            }
+            .profile-pic {
+                margin: 0 auto 30px;
+            }
+            .contact-item {
+                justify-content: center;
+            }
+            .main {
+                width: 100%;
+                box-shadow: none;
+                box-sizing: border-box;
+                padding: 30px 20px;
+            }
+        }
+
+        @media print {
+            body { -webkit-print-color-adjust: exact; }
+            .download-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-pic"></div>
+
+        <div class="section-title-side">Umiejętności</div>
+        <ul>
+            <li>Biegła znajomość języka angielskiego (C2)</li>
+            <li>Zarządzanie obiegiem dokumentacji projektowej i prawnej</li>
+            <li>Koordynacja procedur administracyjnych</li>
+            <li>Obsługa oprogramowania biurowego</li>
+            <li>Logistyka i zaopatrzenie biura</li>
+            <li>Biegła obsługa pakietu Microsoft Office</li>
+        </ul>
+
+        <div class="section-title-side">Języki</div>
+        <ul>
+            <li>Angielski: poziom zaawansowany</li>
+        </ul>
+
+        <div class="section-title-side">Kontakt</div>
+        <div style="margin-top: 15px;">
+            <div class="contact-item"><i class="fas fa-envelope"></i> anna.anoszko@gmail.com</div>
+            <div class="contact-item"><i class="fas fa-phone"></i> 574 322 899</div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Łomża</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>Anna</h1>
+        <h2>Szczęsna</h2>
+
+        <div class="section-header">Podsumowanie</div>
+        <div class="content-block">
+            <p>Doświadczona <b>Koordynatorka z wieloletnim stażem</b> w branży architektonicznej oraz prawnej, biegle posługująca się językiem angielskim. <b>Ekspertka w zarządzaniu</b> obiegiem dokumentacji technicznej i optymalizacji procesów administracyjnych. Po przerwie poświęconej rodzinie wracam na rynek pracy z pełną gotowością do wykorzystania moich umiejętności w zarządzaniu projektami oraz <b>doskonałej organizacji pracy</b> w dynamicznym zespole.</p>
+        </div>
+
+        <div class="section-header">Doświadczenie zawodowe</div>
+        <div class="content-block">
+            <strong>02.2021 – 01.2026</strong>
+            <div class="company-name">Przerwa zawodowa</div>
+            <div>Zarządzanie gospodarstwem domowym</div>
+        </div>
+        <div class="content-block">
+            <strong>08.2018 – 01.2021</strong>
+            <div class="company-name">Big Orange Expediting Inc.</div>
+            <div>Specjalistka Logistyki Biura</div>
+            <ul>
+                <li>Nadzór nad procesem wydawania, ewidencjonowania i archiwizacji projektów budowlanych, wykonawczych oraz powykonawczych</li>
+                <li>Kompletowanie załączników do wniosków o pozwolenie na budowę oraz dbanie o terminowe dostarczanie dokumentacji do urzędów i branżystów</li>
+                <li>Koordynacja przepływu informacji i faktur pomiędzy biurem a zewnętrznymi konstruktorami</li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <strong>06.2017 – 07.2018</strong>
+            <div class="company-name">The Platta Law Firm</div>
+            <div>Koordynatorka Działu Prawnego</div>
+            <ul>
+                <li>Nadzór nad kluczowymi terminami sądowymi i administracyjnymi oraz koordynacja obiegu pism procesowych</li>
+                <li>Archiwizacja i cyfryzacja umów, pełnomocnictw oraz protokołów z posiedzeń organów spółki</li>
+                <li>Analiza formalno-prawna dokumentów pod kątem kompletności wymaganych załączników i poprawności danych kontrahentów</li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <strong>09.2015 – 05.2017</strong>
+            <div class="company-name">Advanced Physical Therapy</div>
+            <div>Kierowniczka Gabinetu Rehabilitacji</div>
+            <ul>
+                <li>Koordynacja pracy fizjoterapeutów i personelu pomocniczego, optymalizacja grafików przyjęć w celu maksymalizacji obłożenia gabinetów</li>
+                <li>Wdrożenie standardów profesjonalnej rejestracji, co przełożyło się na wzrost pozytywnych opinii o placówce</li>
+                <li>Współpraca z biurem rachunkowym w zakresie faktur i kontraktowanie dostawców sprzętu rehabilitacyjnego</li>
+            </ul>
+        </div>
+        <!-- <div class="content-block">
+            <strong>07.2014 – 08.2015</strong>
+            <div class="company-name">Brend Renovation Corp.</div>
+            <div>Asystentka Administracyjna</div>
+            <ul>
+                <li>Zarządzanie obiegiem dokumentów firmowych, dbanie o zaopatrzenie w artykuły biurowe i współpracę z dostawcami zewnętrznymi</li>
+                <li>Samodzielne redagowanie pism biznesowych, obsługa poczty przychodzącej/wychodzącej oraz profesjonalny kontakt z klientem</li>
+                <li>Logistyczne wsparcie przy przygotowywaniu szkoleń, konferencji oraz spotkań integracyjnych dla zespołu</li>
+            </ul>
+        </div> -->
+
+        <div class="section-header">Wykształcenie</div>
+        <div class="content-block">
+            <strong>09.2011 – 06.2014</strong>
+            <div>City University of York College</div>
+            <div>Kierunek: Zarządzanie i marketing</div>
+            <div>Specjalizacja: Bachelor of Science in Business Management</div>
+            <div>Poziom wykształcenia: Licencjat</div>
+            <div>Dodatkowe informacje: Dyplom licencjacki z wyróżnieniem (Magna Cum Laude), przyznany za znalezienie się w grupie 5% najlepszych absolwentów rocznika</div>
+        </div>
+
+        <div class="rodo">
+            Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko. 
+            Wyrażam również zgodę na przetwarzanie moich danych osobowych w celu przyszłych rekrutacji zgodnie z art. 6 ust. 1 lit. 
+            a Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z 
+            przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.
+        </div>
+    </div>
+    <button class="download-btn" onclick="window.print()">
+        <i class="fas fa-file-pdf"></i> Pobierz PDF
+    </button>
+</body>
+</html>
