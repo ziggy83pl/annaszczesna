@@ -1,0 +1,32 @@
+# Pliki testowe i dokumentacja
+test-meta-tags.html
+RAPORT-TESTOW.md
+WYNIKI-TESTOW-POPRAWNE.md
+
+# Stare wersje i kopie zapasowe
+old/
+new-1/
+
+# Pliki JSON z przykładowymi danymi (nieużywane)
+resume.json
+*.json
+
+# Pliki IDE i edytorów
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pliki JPG (mamy już PNG)
+*.jpg
+
+# Logi i pliki tymczasowe
+*.log
+*.tmp
+*.temp
