@@ -53,7 +53,7 @@ body {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background-image: url('twoje-zdjecie.JPG');
+    background-image: url('twoje-zdjecie.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -395,4 +395,5 @@ h2 {
     .section-title-side {
         border-bottom-color: rgba(255, 255, 255, 0.5);
     }
+
 }
