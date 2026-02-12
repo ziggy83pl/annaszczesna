@@ -40,14 +40,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Biblioteka PDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
     
     <!-- Główny arkusz stylów -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="cv-container">
+        <!-- WRAPPER DLA TREŚCI (SIDEBAR + MAIN) -->
+        <div class="cv-body">
         <!-- LEWA KOLUMNA - SIDEBAR -->
         <div class="sidebar">
             <!-- ZDJĘCIE PROFILOWE - WŁASNE ZDJĘCIE -->
@@ -125,7 +126,7 @@
                 </ul>
             </div>
             
-            <div class="content-block">
+            <div class="content-block force-break">
                 <div class="date">09.2015 – 05.2017</div>
                 <div class="company-name">Advanced Physical Therapy</div>
                 <div class="position">Kierowniczka Gabinetu Rehabilitacji</div>
@@ -136,7 +137,7 @@
                 </ul>
             </div>
 
-            <div class="section-header">Wykształcenie</div>
+            <div class="section-header break-before-education">Wykształcenie</div>
             <div class="content-block">
                 <div class="date">09.2011 – 06.2014</div>
                 <div class="company-name">City University of York College</div>
@@ -145,13 +146,15 @@
                 <div class="education-detail"><strong>Poziom wykształcenia:</strong> Licencjat</div>
                 <div class="education-detail"><strong>Dodatkowe informacje:</strong> Dyplom licencjacki z wyróżnieniem (Magna Cum Laude), przyznany za znalezienie się w grupie 5% najlepszych absolwentów rocznika</div>
             </div>
+        </div>
+        </div>
 
-            <div class="rodo">
-                Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko. 
-                Wyrażam również zgodę na przetwarzanie moich danych osobowych w celu przyszłych rekrutacji zgodnie z art. 6 ust. 1 lit. 
-                a Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z 
-                przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.
-            </div>
+        <div class="rodo">
+            <i class="fas fa-info-circle"></i>
+            Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko. 
+            Wyrażam również zgodę na przetwarzanie moich danych osobowych w celu przyszłych rekrutacji zgodnie z art. 6 ust. 1 lit. 
+            a Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z 
+            przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.
         </div>
     </div>
     
@@ -160,6 +163,8 @@
         <i class="fas fa-file-pdf"></i> Pobierz PDF
     </button>
 
+    <!-- Biblioteka PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <!-- SKRYPT JS -->
     <script src="script.js"></script>
 </body>
